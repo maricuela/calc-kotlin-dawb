@@ -3,6 +3,7 @@ fun main(args: Array) {
     val result = when (operation) {
         "multiplica" -> multiplica(num1, num2)
         "divide" -> divideE(num1, num2)
+        "suma" -> suma(num1, num2)
         else -> throw IllegalArgumentException("Operación no soportada")
     }
     showResult(operation, result)
@@ -28,4 +29,7 @@ fun showResult(operation: String, result: Int) {
 
 fun divideE(num1: Int, num2: Int): Int {
     return num1 / num2
+}
+fun suma(num1: Int, num2: Int): Int {
+    return num1 + num2
 }
